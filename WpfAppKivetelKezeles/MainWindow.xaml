@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfAppKivetelKezeles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppKivetelKezeles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox x:Name="txtInputA" Width="200" Height="50" Background="LightGreen"/>
+        <TextBox x:Name="txtInputB" Width="200" Height="50" Background="LightGreen"/>
+        <Button x:Name="btnOsszead" Content="Összeadás" Click="btnOsszead_Click" />
+        <Button x:Name="btnKivon" Content="Kivonás" Click="btnKivon_Click"  />
+        <Button x:Name="btnSzoroz" Content="Szorzás" Click="btnSzoroz_Click"/>
+        <Button x:Name="btnOsztás" Content="Osztás" Click="btnOsztás_Click"/>
+        <Label x:Name="lblEredmeny" FontSize="20" Foreground="Red" Height="30"/>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <TextBox x:Name="txtFileName" Width="200" Height="50" Background="LightGreen" Margin="10 10 50 10"/>
+            <Button x:Name="btnBetolt" Width="200" Content="Betölt" Margin="50 10 10 10" Click="btnBetolt_Click"/>
+
+        </StackPanel>
+        <ListBox Background="LightBlue" Height="200" x:Name="lbFileList"/>
+    </StackPanel>
+    </Window>
